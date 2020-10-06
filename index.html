@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TPS Software Corp.">
+    <title>HTML/CSS training | Homework</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/materialdesignicons.css" rel="stylesheet">
+    <link href="css/materialdesignicons-extra.css" rel="stylesheet">
+    <link href="third-party/OwlCarousel2-2.3.4/assets/owl.carousel.css" rel="stylesheet">
+    <link href="third-party/OwlCarousel2-2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="wrap">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm pl-0 pr-0 navbar-light">
+                <a class="navbar-brand logo-victorya" href="#">Victorya</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#victoryaNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="victoryaNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pakage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="line-white"></div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <p class="ads-title">
+                        Good food choices are good investments.
+                    </p>
+                    <p class="ads-details">
+                        There is a powerful need for symbolism, and that means the architecture must have something that appeals to the human hearts.
+                    </p>
+                    <div class="ads-btn">
+                        <button class="btn btn-order">Order Now</button>
+                        <p class="watch-story">Watch our story</p>
+                        <button class="btn btn-play">play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/jquery.matchHeight.js"></script>
+<script src="third-party/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.card-solution .card-body').matchHeight();
+        $('.card-rnd .card-body').matchHeight();
+        $('.card-why-us .card-body').matchHeight();
+        $('.card-blog .card-body').matchHeight();
+        $('#carousel-clients').owlCarousel({
+            nav: true,
+            dots: false,
+            loop: true,
+            margin: 30,
+            stagePadding: 24,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true,
+            navText: ['<i class="mdi mdi-menu-left mdi-36px"></i>', '<i class="mdi mdi-menu-right mdi-36px"></i>'],
+            responsive: {
+                0: {
+                    center: false,
+                    items: 2
+                },
+                576: {
+                    center: false,
+                    items: 2
+                },
+                768: {
+                    center: false,
+                    items: 4
+                },
+                992: {
+                    center: false,
+                    items: 5
+                },
+                1200: {
+                    center: false,
+                    items: 5,
+                    nav: true,
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
